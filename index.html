@@ -1,63 +1,140 @@
-# samantha-yang.github.io
-Project website
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Blog</title>
-    </head>
-    
-    <style>
-        h1 {
-            color: white;
-            text-decoration: underline;
-            text-align: center;
-            font-family: cursive;
-        }
-        
-        body {
-            background-color: pink;
-        }
-        
-        h3 {
-            color: rgb(179, 50, 179);
-            font-size: 25px;
-            font-weight: bold;
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samantha Yang | Portfolio</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-500">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 dark:bg-gray-950/95 backdrop-blur border-b border-gray-200 dark:border-gray-800 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Samantha Yang</h1>
+            <div class="flex gap-6">
+                <a href="#about" class="hover:text-pink-600 dark:hover:text-pink-400 transition">About</a>
+                <a href="#projects" class="hover:text-pink-600 dark:hover:text-pink-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-pink-600 dark:hover:text-pink-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-        }
-        
-        h2 {
-            color: rgb(126, 50, 207);
-            text-align: center;
-            font-style: italic;
-        }
-        
-        
-    </style>
-    
-    <body>
-        
-        <h1>Samantha's Blog</h1>
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-5xl sm:text-6xl font-bold mb-6 bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
+                        Hi, I'm Samantha
+                    </h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        A passionate developer building beautiful, functional web experiences. I specialize in modern web technologies and love solving complex problems.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#projects" class="px-8 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition transform">
+                            View My Work
+                        </a>
+                        <a href="#contact" class="px-8 py-3 border-2 border-pink-600 text-pink-600 dark:text-pink-400 dark:border-pink-400 rounded-lg font-semibold hover:bg-pink-600 hover:text-white dark:hover:bg-pink-600 dark:hover:text-white transition">
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-64 h-64 bg-gradient-to-br from-pink-400 to-purple-600 rounded-2xl shadow-2xl flex items-center justify-center">
+                        <img src="assets/profile.jpg" alt="Samantha Yang" class="w-full h-full object-cover rounded-2xl" onerror="this.parentElement.innerHTML='<span class=\'text-white text-2xl\'>👩‍💻</span>'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3>Contents</h3>
-        <ul>
-            <li><a href="#beach">Trip to Beach</a></li>
-            <li><a href="#coffee">Coffee Outing</a></li>
-        </ul>
-        
-        <h2 id="beach">Beach Trip</h2>
-        <h4>June 25th, 2022</h4>
-        
-        <p>Today I went to the beach with my friends. It was so fun. The first thing we did<br> was set up our umbrella and towels on the sand. After that, we put on sunscreen<br> because it was very sunny that day. We swam in the water for hours. After that,<br> we were hungry so we decided to have a barbeque. We grilled steak and chicken<br>wings. We also had fruit salad and lots of cool drinks. It would be so fun to do this<br>again!</p>
-        
-        <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/landscapes/beach-in-hawaii.png" height="300" alt="Beach trip">
-        
-        <h2 id="coffee">Coffee Outing</h2>
-        <h4>March 10th, 2022</h4>
-        
-        <p>My friends invited me to a coffee outing today. We decided to try out the new<br>cafe that everyone had been talking about. I had seen a bit about it on social media,<br>so I was excited to try out their coffee. When we got there, there was a bit of a line since it was the afternoon. However, the wait was well worth it. I got a cute bear design<br>on the top of my latte. I took a picture of it and posted it to social media. Everyone<br> seemed to really enjoy their drinks. The vibe of the cafe was also chill.<br><br>I would recommend you to go try it if you have the opportunity to. I definitely need<br>to try again to taste their other drinks!</p>
-        
-        <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/food/coffee-beans.png" height="300" alt="Coffee">
-        
-    </body>
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-4xl font-bold mb-12 text-center">About Me</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">💻</div>
+                    <h4 class="text-xl font-bold mb-3">Development</h4>
+                    <p class="text-gray-600 dark:text-gray-400">Expertise in modern web technologies including React, TypeScript, and Tailwind CSS.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h4 class="text-xl font-bold mb-3">Design</h4>
+                    <p class="text-gray-600 dark:text-gray-400">Creating beautiful, intuitive user interfaces with responsive design principles.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h4 class="text-xl font-bold mb-3">Performance</h4>
+                    <p class="text-gray-600 dark:text-gray-400">Building fast, optimized applications that deliver excellent user experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-4xl font-bold mb-12 text-center">Featured Projects</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-48 bg-gradient-to-br from-pink-400 to-purple-600 flex items-center justify-center overflow-hidden">
+                        <img src="projects/project1.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-110 transition transform duration-300" onerror="this.parentElement.style.backgroundColor='#ec4899'">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2">Project One</h4>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">A beautiful landing page built with React and Tailwind CSS. Features smooth animations and responsive design.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-700 dark:text-pink-200 text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-200 text-sm rounded-full">Tailwind</span>
+                        </div>
+                        <a href="#" class="text-pink-600 dark:text-pink-400 font-semibold hover:underline">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-cyan-600 flex items-center justify-center overflow-hidden">
+                        <img src="projects/project2.png" alt="Project 2" class="w-full h-full object-cover group-hover:scale-110 transition transform duration-300" onerror="this.parentElement.style.backgroundColor='#06b6d4'">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2">Project Two</h4>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">A full-stack web application with real-time data updates and modern state management.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 text-sm rounded-full">Node.js</span>
+                            <span class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900 text-cyan-700 dark:text-cyan-200 text-sm rounded-full">MongoDB</span>
+                        </div>
+                        <a href="#" class="text-pink-600 dark:text-pink-400 font-semibold hover:underline">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-6">Let's Work Together</h3>
+            <p class="text-xl text-gray-600 dark:text-gray-400 mb-12">
+                I'm always interested in hearing about new projects and opportunities.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="mailto:samantha@example.com" class="px-8 py-4 bg-gradient-to-r from-pink-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition transform">
+                    ✉️ Send Email
+                </a>
+                <a href="https://linkedin.com/in/samantha-yang" target="_blank" class="px-8 py-4 border-2 border-pink-600 text-pink-600 dark:text-pink-400 dark:border-pink-400 rounded-lg font-semibold hover:bg-pink-600 hover:text-white dark:hover:bg-pink-600 dark:hover:text-white transition">
+                    💼 LinkedIn
+                </a>
+                <a href="https://github.com/samantha-yang" target="_blank" class="px-8 py-4 border-2 border-gray-400 dark:border-gray-600 text-gray-900 dark:text-gray-100 rounded-lg font-semibold hover:bg-gray-900 hover:text-white dark:hover:bg-gray-100 dark:hover:text-gray-900 transition">
+                    🐙 GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-black text-gray-300 py-8 px-4 text-center">
+        <p>© 2026 Samantha Yang. Built with Tailwind CSS.</p>
+    </footer>
+</body>
 </html>
