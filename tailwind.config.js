@@ -1,12 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./projects/**/*.html", "./assets/**/*.html"],   // add all files using Tailwind classes
-  darkMode: 'class',           // enable class-based dark mode
+  content: ["./index.html", "./projects/**/*.html", "./assets/**/*.html"],
+  safelist: ['animate-marquee','animate-marquee2'],
   theme: {
     extend: {
-      colors: {
-        pinkLight: '#ffe4ec',
-        pinkDark: '#d6336c',
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 25s linear infinite',
       },
     },
   },
