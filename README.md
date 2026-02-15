@@ -1,4 +1,4 @@
-# Samantha Yang – Personal Website
+# [Samantha Yang](samantha-yang.com)
 
 Welcome to my personal website! Here, you can explore my portfolio and ways to get in touch.
 
@@ -26,7 +26,7 @@ Here are some of my projects featured on this site:
 ---
 
 ## Contact Me
-- **Email:** samantha.yang@example.com  
+- **Email:** samanthayang637@gmai.com
 - **GitHub:** [@samantha-yang](https://github.com/samantha-yang)  
 - **LinkedIn:** [Samantha Yang](https://www.linkedin.com/in/samantha-yang)
 
