@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samantha Yang | Portfolio</title>
-  <link rel="stylesheet" href="dist/style.css">
+  <link rel="stylesheet" href="../dist/style.css">
 </head>
 <body class="bg-white text-gray-900 pt-16">
 
@@ -13,9 +13,9 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
       <h1 class="text-4xl font-bold text-pink-600">Samantha Yang</h1>
       <div class="flex gap-6">
-        <a href="index.html" class="hover:text-pink-600 transition">Home</a>
+        <a href="../index.html" class="hover:text-pink-600 transition">Home</a>
         <a href="pages/about.html" class="hover:text-pink-600 transition">About Me</a>
-        <a href="#projects" class="hover:text-pink-600 transition">Projects</a>
+        <a href="#contact" class="hover:text-pink-600 transition">Projects</a>
         <a href="#contact" class="hover:text-pink-600 transition">Contact</a>
       </div>
     </div>
@@ -42,79 +42,65 @@
     </div>
   </section>
 
-  <!-- Hero Section -->
-  <section class="pt-12 pb-20 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center bg-white">
-    <div class="max-w-6xl mx-auto w-full">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-2xl sm:text-6xl font-bold mb-6 text-pink-600">
-            I'm Samantha Yang
-          </h2>
-          <p class="text-xl text-gray-600 mb-6 leading-relaxed">
-            A developer that finds joy in turning complex problems into intuitive, functional solutions.
-          </p>
-          <div class="flex gap-4">
-            <a href="#projects" class="px-8 py-3 bg-gradient-to-r from-pink-700 to-pink-400 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition transform">
-              View My Work
-            </a>
-            <a href="pages/about.html" class="px-8 py-3 border-2 border-pink-600 text-pink-600 rounded-lg font-semibold hover:bg-pink-600 hover:text-white transition">
-              About Me
-            </a>
-            <a href="#contact" class="px-8 py-3 border-2 border-pink-600 text-pink-600 rounded-lg font-semibold hover:bg-pink-600 hover:text-white transition">
-              Get In Touch
-            </a>
-          </div>
-        </div>
-        <div class="flex justify-center">
-          <div class="w-64 h-64 bg-gradient-to-br from-pink-500 to-pink-300 rounded-2xl shadow-2xl flex items-center justify-center">
-            <img src="assets/profile.jpg" alt="Samantha Yang" class="w-full h-full object-cover rounded-2xl" onerror="this.parentElement.innerHTML='<span class=\'text-white text-2xl\'>👩‍💻</span>'">
-          </div>
-        </div>
+<section class="py-16 bg-white">
+  <!-- Centered container with max width -->
+  <div class="max-w-xl mx-auto text-center">
+
+    <!-- Heading -->
+    <h1 class="text-4xl sm:text-5xl font-bold mb-4 bg-clip-text">
+      All About Me
+    </h1>
+
+    <!-- Subheading -->
+    <h2 class="text-2xl sm:text-3xl font-semibold mb-8 text-pink-600">
+      Nice to meet you, I'm Samantha
+    </h2>
+
+    <!-- Profile Picture -->
+    <img src="assets/profile.jpg" alt="Samantha Yang" class="w-48 h-48 object-cover rounded-full">
+
+    <!-- Introduction -->
+    <p class="text-lg text-gray-600 mb-12 leading-relaxed">
+        ABOUT ME PARAGRAPH PLACE HOLDER
+    </p>
+
+    <!-- Education & Experience -->
+    <div class="space-y-6 text-left">
+      <div>
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Education</h3>
+        <p class="text-gray-700">Bachelors in Computer Science, University of Washington</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Experience</h3>
+        <p class="text-gray-700">Software Developer Intern at Nintendo of America, worked on feature flag management project with React, TypeScript, and GraphQL.</p>
       </div>
     </div>
-  </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+  </div>
+</section>
+
+
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
     <div class="max-w-6xl mx-auto">
-      <h3 class="text-4xl font-bold mb-12 text-center">Featured Projects</h3>
-      <p class="text-6xl text-gray-600 mb-12 text-center">
-        Take a look at what I've been up to.
-      </p>
-      <div class="grid md:grid-cols-2 gap-8">
-
-        <!-- Project 1 -->
-        <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
-          <div class="h-48 bg-gradient-to-br from-pink-500 to-pink-300 flex items-center justify-center overflow-hidden">
-            <img src="projects/project1.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-110 transition transform duration-300" onerror="this.parentElement.style.backgroundColor='#ec4899'">
-          </div>
-          <div class="p-6">
-            <h4 class="text-2xl font-bold mb-2">Project One</h4>
-            <p class="text-gray-600 mb-4">A full-stack web application with real-time data updates.</p>
-            <div class="flex gap-2 mb-4">
-              <span class="px-3 py-1 bg-pink-100 text-pink-700 text-sm rounded-full">React</span>
-              <span class="px-3 py-1 bg-gray-200 text-gray-800 text-sm rounded-full">Tailwind</span>
-            </div>
-            <a href="#" class="text-pink-600 font-semibold hover:underline">View Project →</a>
-          </div>
+      <h3 class="text-4xl font-bold mb-12 text-center">About Me</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+          <div class="text-4xl mb-4">💻</div>
+          <h4 class="text-xl font-bold mb-3">Development</h4>
+          <p class="text-gray-600">Expertise in modern web technologies including Java, TypeScript, and React.</p>
         </div>
-
-        <!-- Project 2 -->
-        <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
-          <div class="h-48 bg-gradient-to-br from-pink-600 to-pink-200 flex items-center justify-center overflow-hidden">
-            <img src="projects/project2.png" alt="Project 2" class="w-full h-full object-cover group-hover:scale-110 transition transform duration-300" onerror="this.parentElement.style.backgroundColor='#f9a8d4'">
-          </div>
-          <div class="p-6">
-            <h4 class="text-2xl font-bold mb-2">Project Two</h4>
-            <p class="text-gray-600 mb-4">Game development passion project</p>
-            <div class="flex gap-2 mb-4">
-              <span class="px-3 py-1 bg-pink-100 text-pink-700 text-sm rounded-full">Node.js</span>
-              <span class="px-3 py-1 bg-gray-200 text-gray-800 text-sm rounded-full">MongoDB</span>
-            </div>
-            <a href="#" class="text-pink-600 font-semibold hover:underline">View Project →</a>
-          </div>
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+          <div class="text-4xl mb-4">🎨</div>
+          <h4 class="text-xl font-bold mb-3">Design</h4>
+          <p class="text-gray-600">Creating beautiful, intuitive user interfaces with responsive design principles.</p>
         </div>
-
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+          <div class="text-4xl mb-4">🚀</div>
+          <h4 class="text-xl font-bold mb-3">Performance</h4>
+          <p class="text-gray-600">Building fast, optimized applications that deliver excellent user experiences.</p>
+        </div>
       </div>
     </div>
   </section>
