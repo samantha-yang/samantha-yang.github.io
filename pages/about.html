@@ -15,7 +15,7 @@
       <div class="flex gap-6">
         <a href="../index.html" class="hover:text-pink-600 transition">Home</a>
         <a href="pages/about.html" class="hover:text-pink-600 transition">About Me</a>
-        <a href="#contact" class="hover:text-pink-600 transition">Projects</a>
+        <a href="../index.html#projects" class="hover:text-pink-600 transition">Projects</a>
         <a href="#contact" class="hover:text-pink-600 transition">Contact</a>
       </div>
     </div>
@@ -44,35 +44,38 @@
 
 <section class="py-16 bg-white">
   <!-- Centered container with max width -->
-  <div class="max-w-xl mx-auto text-center">
+  <div class="max-w-4xl mx-auto text-center">
 
     <!-- Heading -->
-    <h1 class="text-4xl sm:text-5xl font-bold mb-4 bg-clip-text">
-      All About Me
+    <h1 class="text-2xl font-bold bg-clip-text text-gray-500">
+      ALL ABOUT ME
     </h1>
 
     <!-- Subheading -->
-    <h2 class="text-2xl sm:text-3xl font-semibold mb-8 text-pink-600">
+    <h2 class="text-4xl font-semibold mb-8 text-pink-600">
       Nice to meet you, I'm Samantha
     </h2>
 
     <!-- Profile Picture -->
-    <img src="assets/profile.jpg" alt="Samantha Yang" class="w-48 h-48 object-cover rounded-full">
+    <img src="../assets/profile.jpeg" alt="Samantha Yang" class="w-60 h-60 object-cover rounded-2xl mx-auto">
+
 
     <!-- Introduction -->
-    <p class="text-lg text-gray-600 mb-12 leading-relaxed">
-        ABOUT ME PARAGRAPH PLACE HOLDER
+    <p class="text-lg text-gray-700 mb-12 leading-relaxed">
+    I’m a passionate software developer who loves crafting elegant solutions to complex problems. I studied computer science at the University of Washington, where I built a strong foundation in software design and problem-solving. With experience in both frontend and backend development, I enjoy creating applications that are not only functional but also enjoyable to use. Currently based in Seattle, WA, I’m always excited to take on new challenges and collaborate on impactful projects.
+    <br><br>
+    My goal as a developer is to continuously grow my technical expertise while building reliable, user-focused software that solves real-world problems and creates meaningful impact.
     </p>
-
     <!-- Education & Experience -->
-    <div class="space-y-6 text-left">
+    <div class="space-y-2 text-left">
       <div>
-        <h3 class="text-xl font-semibold text-pink-600 mb-2">Education</h3>
-        <p class="text-gray-700">Bachelors in Computer Science, University of Washington</p>
+        <h3 class="text-xl font-semibold text-pink-600 mb-0">EDUCATION</h3>
+        <p class="text-gray-700 text-lg">University of Washington -  B.S. Computer Science</p>
       </div>
       <div>
-        <h3 class="text-xl font-semibold text-pink-600 mb-2">Experience</h3>
-        <p class="text-gray-700">Software Developer Intern at Nintendo of America, worked on feature flag management project with React, TypeScript, and GraphQL.</p>
+        <h3 class="text-xl font-semibold text-pink-600 mb-0">EXPERIENCE</h3>
+        <p class="text-gray-700 text-lg">Nintendo - Software Engineering Intern (Summer 2025)</p>
+        <p class="text-gray-700 text-lg">University of Washington - Undergraduate Teaching Assistant (2023 - 2025)</p>
       </div>
     </div>
 
@@ -84,22 +87,21 @@
   <!-- About Section -->
   <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
     <div class="max-w-6xl mx-auto">
-      <h3 class="text-4xl font-bold mb-12 text-center">About Me</h3>
       <div class="grid md:grid-cols-3 gap-8">
         <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
           <div class="text-4xl mb-4">💻</div>
-          <h4 class="text-xl font-bold mb-3">Development</h4>
-          <p class="text-gray-600">Expertise in modern web technologies including Java, TypeScript, and React.</p>
+          <h4 class="text-xl font-bold mb-3 text-gray-500">DEVELOPMENT</h4>
+          <p class="text-gray-700">Expertise in modern web technologies including Java, TypeScript, and React.</p>
         </div>
         <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
           <div class="text-4xl mb-4">🎨</div>
-          <h4 class="text-xl font-bold mb-3">Design</h4>
-          <p class="text-gray-600">Creating beautiful, intuitive user interfaces with responsive design principles.</p>
+          <h4 class="text-xl font-bold mb-3 text-gray-500">DESIGN</h4>
+          <p class="text-gray-700">Creating beautiful, intuitive user interfaces that deliver excellent user experiences.</p>
         </div>
         <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
-          <div class="text-4xl mb-4">🚀</div>
-          <h4 class="text-xl font-bold mb-3">Performance</h4>
-          <p class="text-gray-600">Building fast, optimized applications that deliver excellent user experiences.</p>
+          <div class="text-4xl mb-4">💡</div>
+          <h4 class="text-xl font-bold mb-3 text-gray-500">PROBLEM SOLVING</h4>
+          <p class="text-gray-700">Breaking down complex problems into elegant solutions.</p>
         </div>
       </div>
     </div>
@@ -128,18 +130,18 @@
   <!-- Contact Section -->
   <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
     <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-4xl font-bold mb-6">Let's build something together</h3>
-      <p class="text-xl text-gray-600 mb-12 text-center">
+      <h3 class="text-4xl font-bold mb-6 text-gray-500">Let's build something together</h3>
+      <p class="text-2xl text-gray-700 mb-12 text-center font-bold">
         Get in touch.
       </p>
       <div class="flex flex-col sm:flex-row gap-6 justify-center">
-        <a href="mailto:samanthayang637@gmail.com" class="px-8 py-4 bg-gradient-to-r from-pink-700 to-pink-400 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition transform">
+        <a href="mailto:samanthayang637@gmail.com" target="_blank" class="px-8 py-4 border-2 border-pink-600 text-pink-600 rounded-lg font-semibold hover:bg-pink-600 hover:text-white transition">
           Email
         </a>
         <a href="https://linkedin.com/in/samantha-yang" target="_blank" class="px-8 py-4 border-2 border-pink-600 text-pink-600 rounded-lg font-semibold hover:bg-pink-600 hover:text-white transition">
           LinkedIn
         </a>
-        <a href="https://github.com/samantha-yang" target="_blank" class="px-8 py-4 border-2 border-gray-400 text-gray-900 rounded-lg font-semibold hover:bg-gray-900 hover:text-white transition">
+        <a href="https://github.com/samantha-yang" target="_blank" class="px-8 py-4 border-2 border-pink-600 text-pink-600 rounded-lg font-semibold hover:bg-pink-600 hover:text-white transition">
           GitHub
         </a>
       </div>

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./projects/**/*.html", "./assets/**/*.html"],
+  content: ["./**/*.{html,js}"],
   safelist: ['animate-marquee','animate-marquee2'],
   theme: {
     extend: {
