@@ -14,23 +14,49 @@
 
 @layer utilities {
   @keyframes marquee {
-      0% { transform: translateX(0%); }
-      100% { transform: translateX(-50%); }
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
   }
 
-    .marquee-track {
-      display: flex;
-      gap: 2rem;
-      align-items: center;
-      white-space: nowrap;
-    }
-
-    .marquee-track > * {
-      flex: 0 0 auto;
-    }
-
-    .animate-marquee {
-      animation: marquee 18s linear infinite;
+  .marquee-track {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
+  .animate-marquee {
+    animation: marquee 18s linear infinite;
+  }
 }
+
+/* Animated Gradient Background */
+.hero-gradient {
+  background: linear-gradient(270deg, #fbcfe8, #f472b6, #f9a8d4, #fbcfe8);
+  background-size: 800% 800%;
+  animation: gradientShift 20s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Blob Animation */
+@keyframes blobMove {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  25% { transform: translate(20px, -30px) scale(1.05); }
+  50% { transform: translate(-25px, 20px) scale(0.95); }
+  75% { transform: translate(15px, 25px) scale(1.1); }
+}
+
+.animate-blob {
+  animation: blobMove 12s infinite ease-in-out;
+}
+
+.animation-delay-2000 { animation-delay: 2s; }
+.animation-delay-4000 { animation-delay: 4s; }
+.animation-delay-6000 { animation-delay: 6s; }
+
+
