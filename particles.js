@@ -521,6 +521,7 @@ var pJS = function(tag_id, params){
       /* move the particle */
       if(pJS.particles.move.enable){
         var ms = pJS.particles.move.speed/2;
+        console.log('speed:', pJS.particles.move.speed, 'ms:', ms);
         p.x += p.vx * ms;
         p.y += p.vy * ms;
       }
