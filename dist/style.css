@@ -33,6 +33,9 @@
 .mx-auto {
   margin-inline: auto;
 }
+.mt-3 {
+  margin-top: calc(var(--spacing, 0.25rem) * 3);
+}
 .mt-\[50px\] {
   margin-top: 50px;
 }
@@ -48,14 +51,29 @@
 .mb-4 {
   margin-bottom: calc(var(--spacing, 0.25rem) * 4);
 }
+.mb-5 {
+  margin-bottom: calc(var(--spacing, 0.25rem) * 5);
+}
 .mb-6 {
   margin-bottom: calc(var(--spacing, 0.25rem) * 6);
 }
 .mb-8 {
   margin-bottom: calc(var(--spacing, 0.25rem) * 8);
 }
+.mb-10 {
+  margin-bottom: calc(var(--spacing, 0.25rem) * 10);
+}
 .mb-12 {
   margin-bottom: calc(var(--spacing, 0.25rem) * 12);
+}
+.mb-15 {
+  margin-bottom: calc(var(--spacing, 0.25rem) * 15);
+}
+.mb-20 {
+  margin-bottom: calc(var(--spacing, 0.25rem) * 20);
+}
+.mb-200 {
+  margin-bottom: calc(var(--spacing, 0.25rem) * 200);
 }
 .flex {
   display: flex;
@@ -72,6 +90,15 @@
 .h-64 {
   height: calc(var(--spacing, 0.25rem) * 64);
 }
+.h-72 {
+  height: calc(var(--spacing, 0.25rem) * 72);
+}
+.h-84 {
+  height: calc(var(--spacing, 0.25rem) * 84);
+}
+.h-96 {
+  height: calc(var(--spacing, 0.25rem) * 96);
+}
 .h-full {
   height: 100%;
 }
@@ -80,6 +107,12 @@
 }
 .w-64 {
   width: calc(var(--spacing, 0.25rem) * 64);
+}
+.w-100 {
+  width: calc(var(--spacing, 0.25rem) * 100);
+}
+.w-auto {
+  width: auto;
 }
 .w-full {
   width: 100%;
@@ -129,6 +162,9 @@
 .gap-4 {
   gap: calc(var(--spacing, 0.25rem) * 4);
 }
+.gap-5 {
+  gap: calc(var(--spacing, 0.25rem) * 5);
+}
 .gap-6 {
   gap: calc(var(--spacing, 0.25rem) * 6);
 }
@@ -140,6 +176,13 @@
     --tw-space-y-reverse: 0;
     margin-block-start: calc(calc(var(--spacing, 0.25rem) * 4) * var(--tw-space-y-reverse));
     margin-block-end: calc(calc(var(--spacing, 0.25rem) * 4) * calc(1 - var(--tw-space-y-reverse)));
+  }
+}
+.space-y-6 {
+  :where(& > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing, 0.25rem) * 6) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing, 0.25rem) * 6) * calc(1 - var(--tw-space-y-reverse)));
   }
 }
 .overflow-hidden {
@@ -199,6 +242,15 @@
 .bg-pink-400 {
   background-color: var(--color-pink-400, oklch(71.8% 0.202 349.761));
 }
+.bg-red-100 {
+  background-color: var(--color-red-100, oklch(93.6% 0.032 17.717));
+}
+.bg-red-200 {
+  background-color: var(--color-red-200, oklch(88.5% 0.062 18.334));
+}
+.bg-red-300 {
+  background-color: var(--color-red-300, oklch(80.8% 0.114 19.571));
+}
 .bg-white {
   background-color: var(--color-white, #fff);
 }
@@ -217,6 +269,9 @@
 .p-8 {
   padding: calc(var(--spacing, 0.25rem) * 8);
 }
+.p-12 {
+  padding: calc(var(--spacing, 0.25rem) * 12);
+}
 .px-3 {
   padding-inline: calc(var(--spacing, 0.25rem) * 3);
 }
@@ -228,6 +283,9 @@
 }
 .px-8 {
   padding-inline: calc(var(--spacing, 0.25rem) * 8);
+}
+.py-0 {
+  padding-block: calc(var(--spacing, 0.25rem) * 0);
 }
 .py-1 {
   padding-block: calc(var(--spacing, 0.25rem) * 1);
@@ -247,11 +305,23 @@
 .py-20 {
   padding-block: calc(var(--spacing, 0.25rem) * 20);
 }
+.pt-4 {
+  padding-top: calc(var(--spacing, 0.25rem) * 4);
+}
 .pt-16 {
   padding-top: calc(var(--spacing, 0.25rem) * 16);
 }
+.pb-0 {
+  padding-bottom: calc(var(--spacing, 0.25rem) * 0);
+}
 .pb-1 {
   padding-bottom: calc(var(--spacing, 0.25rem) * 1);
+}
+.pb-4 {
+  padding-bottom: calc(var(--spacing, 0.25rem) * 4);
+}
+.pb-16 {
+  padding-bottom: calc(var(--spacing, 0.25rem) * 16);
 }
 .text-center {
   text-align: center;
@@ -266,6 +336,10 @@
 .text-2xl {
   font-size: var(--text-2xl, 1.5rem);
   line-height: var(--tw-leading, var(--text-2xl--line-height, calc(2 / 1.5)));
+}
+.text-3xl {
+  font-size: var(--text-3xl, 1.875rem);
+  line-height: var(--tw-leading, var(--text-3xl--line-height, calc(2.25 / 1.875)));
 }
 .text-4xl {
   font-size: var(--text-4xl, 2.25rem);
@@ -303,8 +377,15 @@
   --tw-tracking: var(--tracking-wide, 0.025em);
   letter-spacing: var(--tracking-wide, 0.025em);
 }
+.tracking-widest {
+  --tw-tracking: var(--tracking-widest, 0.1em);
+  letter-spacing: var(--tracking-widest, 0.1em);
+}
 .whitespace-nowrap {
   white-space: nowrap;
+}
+.text-gray-400 {
+  color: var(--color-gray-400, oklch(70.7% 0.022 261.325));
 }
 .text-gray-500 {
   color: var(--color-gray-500, oklch(55.1% 0.027 264.364));
@@ -326,6 +407,9 @@
 }
 .text-pink-400 {
   color: var(--color-pink-400, oklch(71.8% 0.202 349.761));
+}
+.text-pink-500 {
+  color: var(--color-pink-500, oklch(65.6% 0.241 354.308));
 }
 .text-pink-600 {
   color: var(--color-pink-600, oklch(59.2% 0.249 0.584));
