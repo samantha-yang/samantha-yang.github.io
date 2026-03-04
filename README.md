@@ -12,10 +12,9 @@ I’m **Samantha Yang**, a passionate software developer and problem-solver. I e
 ## Projects & Portfolio
 Here are some of my projects featured on this site:
 
-- **Project 1** – 
-- **Project 2** –
-
-*(More projects are showcased on the website.)*
+- **Nintendo of America — Software Engineering Internship** – Built an internal feature flag management system to help the team toggle, roll out, and control access to features across environments. Built with React, TypeScript, AWS, and Node.js.
+- **Pot Pal** – A UX design project for CSE 440 (Human-Computer Interaction) featuring a smart plant pot and companion app designed to make emotional reflection effortless. Built through UX research, Figma prototyping, and usability testing.
+- **T&C Farm *(WIP)*** – A freelance website for my family's flower business at Pike Place Market, showcasing their story, products, and contact info.
 
 ---
 
