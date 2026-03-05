@@ -18,7 +18,7 @@
   }
 
   .btn-contact {
-    @apply px-8 py-4 border-2 border-pink-400 text-pink-400 rounded-lg font-semibold
+    @apply px-6 py-3 border-2 border-pink-400 text-pink-400 rounded-lg font-semibold text-sm
            hover:bg-pink-400 hover:text-white transition hover:shadow-lg hover:scale-105;
   }
 
