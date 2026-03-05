@@ -37,12 +37,12 @@
 
   /* --- Navigation --- */
   .nav-link {
-    @apply text-gray-500 no-underline pb-1 border-b-2 border-transparent
+    @apply text-gray-500 text-base no-underline pb-1 border-b-2 border-transparent
            hover:border-pink-400 hover:text-pink-400 transition;
   }
 
   .nav-link-active {
-    @apply text-pink-400 no-underline pb-1 border-b-2 border-pink-400;
+    @apply text-pink-400 text-base no-underline pb-1 border-b-2 border-pink-400;
   }
 
   /* --- Tags / Pills --- */
