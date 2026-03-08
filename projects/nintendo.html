@@ -8,15 +8,33 @@
 </head>
 <body class="bg-white text-gray-900 pt-16 font-sans">
 
-  <nav class="fixed top-0 w-full bg-white/95 backdrop-blur border-b border-gray-200 z-50">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-white/50 backdrop-blur border-b border-gray-200 z-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-      <h1 class="text-4xl font-bold text-pink-400">Samantha Yang</h1>
-      <div class="flex gap-6 text-sm font-medium tracking-wide">
-        <a href="../index.html" class="nav-link">Home</a>
+      <h1 class="text-2xl sm:text-4xl font-bold text-pink-400">Samantha Yang</h1>
+
+      <!-- Desktop links -->
+      <div class="hidden sm:flex gap-6 text-sm font-medium tracking-wide">
+        <a href="/" class="nav-link">Home</a>
         <a href="../pages/about.html" class="nav-link">About Me</a>
-        <a href="../index.html#projects" class="nav-link">Projects</a>
-        <a href="../index.html#contact" class="nav-link">Contact</a>
+        <a href="/#projects" class="nav-link">Projects</a>
+        <a href="/#contact" class="nav-link">Contact</a>
       </div>
+
+      <!-- Hamburger button (mobile only) -->
+      <button id="menu-btn" class="sm:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+        <span class="block w-6 h-0.5 bg-gray-800 transition-all duration-300" id="line1"></span>
+        <span class="block w-6 h-0.5 bg-gray-800 transition-all duration-300" id="line2"></span>
+        <span class="block w-6 h-0.5 bg-gray-800 transition-all duration-300" id="line3"></span>
+      </button>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div id="mobile-menu" class="sm:hidden hidden flex-col px-6 pb-4 gap-4 text-sm font-medium tracking-wide border-t border-gray-100 bg-white/95">
+      <a href="/" class="nav-link pt-4">Home</a>
+      <a href="../pages/about.html" class="nav-link">About Me</a>
+      <a href="/#projects" class="nav-link">Projects</a>
+      <a href="/#contact" class="nav-link">Contact</a>
     </div>
   </nav>
 
@@ -96,6 +114,40 @@
   <footer class="bg-gray-100 text-gray-500 py-8 px-4 text-center">
     <p>Designed with <span class="text-pink-400">love</span>, debugged with <span class="text-green-600">matcha</span>.</p>
   </footer>
+
+  <script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const line1 = document.getElementById('line1');
+  const line2 = document.getElementById('line2');
+  const line3 = document.getElementById('line3');
+
+  btn.addEventListener('click', () => {
+    const isOpen = !menu.classList.contains('hidden');
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('flex');
+
+    if (!isOpen) {
+      line1.style.transform = 'translateY(8px) rotate(45deg)';
+      line2.style.opacity = '0';
+      line3.style.transform = 'translateY(-8px) rotate(-45deg)';
+    } else {
+      line1.style.transform = '';
+      line2.style.opacity = '1';
+      line3.style.transform = '';
+    }
+  });
+
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      menu.classList.remove('flex');
+      line1.style.transform = '';
+      line2.style.opacity = '1';
+      line3.style.transform = '';
+    });
+  });
+  </script>
 
 </body>
 </html>
